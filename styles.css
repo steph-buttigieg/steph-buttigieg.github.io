@@ -479,7 +479,8 @@ p {
   color: #ffffff;
 }
 
-.socials .fab {
+.socials .fab,
+.socials .fas {
   display: block;
   font-size: 1.35rem;
   line-height: 1;
