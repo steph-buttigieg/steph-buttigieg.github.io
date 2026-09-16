@@ -492,7 +492,7 @@ p {
 
 /* The solid book glyph has more internal whitespace than the brand marks. */
 .socials .fa-book {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 .paper-page {
