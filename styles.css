@@ -532,6 +532,135 @@ p {
   background: rgba(255, 255, 255, 0.92);
 }
 
+.media-page {
+  padding-top: 2rem;
+}
+
+.media-hero {
+  margin-bottom: 1rem;
+}
+
+.media-hero h1 {
+  max-width: 14ch;
+}
+
+.media-collection {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.media-card {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid rgba(83, 42, 109, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 0.8rem 2rem rgba(46, 24, 56, 0.1);
+}
+
+.media-card .section-kicker {
+  margin-bottom: 0.75rem;
+}
+
+.media-card h2 {
+  margin-bottom: 0.75rem;
+}
+
+.media-card p:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.media-card video {
+  display: block;
+  width: 100%;
+  margin-top: auto;
+  border-radius: 6px;
+}
+
+.media-card video {
+  aspect-ratio: 16 / 9;
+  background: var(--deep);
+}
+
+.media-card video:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
+
+.media-note {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  border: 1px dashed rgba(95, 77, 147, 0.38);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.66);
+}
+
+.media-note p {
+  margin-bottom: 0;
+}
+
+.media-preview-content {
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.62fr) minmax(0, 1.38fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.media-preview-content p {
+  max-width: 48rem;
+}
+
+.media-preview-content .button {
+  margin-top: 0.5rem;
+}
+
+.media-articles {
+  margin-top: 1rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border: 1px solid rgba(83, 42, 109, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.media-articles h2 {
+  margin-bottom: 0.6rem;
+}
+
+.media-articles > p {
+  max-width: 48rem;
+}
+
+.media-article-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.media-article-link {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--deep);
+  font-weight: 800;
+}
+
+.media-article-link small {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.media-article-link:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
 .wide-figure {
   margin: 2rem 0;
   overflow: hidden;
@@ -596,11 +725,13 @@ p {
   .hero,
   .content-grid,
   .section-heading,
+  .media-preview-content,
   .research-cards,
   .outreach-grid,
   .contact-grid,
   .publication-panel,
-  .publication-card {
+  .publication-card,
+  .media-collection {
     grid-template-columns: 1fr;
   }
 

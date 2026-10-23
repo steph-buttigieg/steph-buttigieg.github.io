@@ -5,9 +5,17 @@ Static GitHub Pages version of the current Cambridge personal website.
 ## Files
 
 - `index.html` - page content and structure
+- `media.html` - video and written media page
 - `styles.css` - responsive visual design
 - `script.js` - footer year helper
-- `assets/` - portrait, logo, CV, and project-report PDFs
+- `assets/` - portrait, logo, CV, project-report PDFs, and media files
+
+## Media files
+
+Add the following files to `assets/` for the media page players to load:
+
+- `LBC News.mp4` (already present)
+- `BBC World News.mp4` (already present)
 
 ## Preview
 
